@@ -64,11 +64,8 @@ const events = [
 const EventsList: React.FC = () => {
   return (
     <ul role="list" className="divide-y divide-gray-100">
-      {events.map((event) => (
-        <li
-          className="flex justify-between items-center py-6"
-          key={event.event}
-        >
+      {events.map((event, index) => (
+        <li className="flex justify-between items-center py-6" key={index}>
           <div className="">
             <p className="text-sm font-medium text-gray-900">{event.event}</p>
             <p className="text-sm text-gray-500">{event.date}</p>
