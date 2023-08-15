@@ -11,7 +11,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ progressValue }) => {
   useEffect(() => {
     const timer = setTimeout(() => setProgress(progressValue), 500);
     return () => clearTimeout(timer);
-  }, []);
+  }, [progressValue]);
 
   return (
     <div className="flex flex-col items-center">
