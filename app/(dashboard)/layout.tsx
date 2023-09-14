@@ -13,7 +13,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
       <div className="">
         <Sidebar />
       </div>
-      <div className="col-span-5 bg-white">
+      <div className="col-span-5">
         <Navbar />
         <ScrollArea className="h-[88vh]">
           <div className="py-4">{children}</div>

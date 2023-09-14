@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Karla } from "next/font/google";
-
+import { ThemeProvider } from "@/components/theme-provider";
 const karla = Karla({
   subsets: ["latin"],
   variable: "--font-karla",
@@ -20,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={karla.className}>{children}</body>
+      <body className={karla.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

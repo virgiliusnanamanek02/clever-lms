@@ -4,7 +4,6 @@ import {
   Squares2X2Icon,
   AcademicCapIcon,
   Cog6ToothIcon,
-  ChatBubbleOvalLeftEllipsisIcon,
   CalendarIcon,
   ListBulletIcon,
 } from "@heroicons/react/24/outline";
